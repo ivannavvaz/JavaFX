@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="382.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agendafx.InsertarController">
+   <children>
+      <Label layoutX="61.0" layoutY="25.0" prefHeight="84.0" prefWidth="266.0" text="Insertar empleado" textAlignment="CENTER" textFill="#3b38ee">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idNombre" layoutX="177.0" layoutY="155.0" />
+      <TextField fx:id="idApellidos" layoutX="177.0" layoutY="196.0" />
+      <TextField fx:id="idTelefono" layoutX="177.0" layoutY="235.0" />
+      <TextField fx:id="idFecha" layoutX="177.0" layoutY="274.0" promptText="AAAA/MM/DD" />
+      <TextField fx:id="idCargo" layoutX="177.0" layoutY="313.0" />
+      <Label layoutX="57.0" layoutY="159.0" text="Nombre*" />
+      <Label layoutX="53.0" layoutY="200.0" text="Apellidos*" />
+      <Label layoutX="55.0" layoutY="239.0" text="Telefono*" />
+      <Label layoutX="25.0" layoutY="278.0" text="Fecha Nacimiento*" />
+      <Label layoutX="64.0" layoutY="317.0" text="Cargo*" />
+      <Button id="insertar" fx:id="idInsertar" layoutX="144.0" layoutY="374.0" mnemonicParsing="false" onAction="#insertarEmpleado" prefHeight="24.0" prefWidth="101.0" text="Insertar" />
+      <Label layoutX="56.0" layoutY="109.0" text="SI los campos tienen * son OBLIGATORIOS" />
+      <Button id="idIrPaginaPrincipal" fx:id="idIrPaginaPrincipal" layoutX="106.0" layoutY="463.0" mnemonicParsing="false" onAction="#cambiarVista" prefHeight="24.0" prefWidth="170.0" text="Ir a pagina principal" />
+   </children>
+</Pane>

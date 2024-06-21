@@ -1,0 +1,23 @@
+DROP DATABASE IF EXISTS agenda;
+CREATE DATABASE agenda;
+
+USE agenda;
+
+CREATE TABLE empleados (
+
+	CONSTRAINT emp_ide_pk PRIMARY KEY (idEmpleado),
+
+	idEmpleado INT auto_increment,
+	nombre VARCHAR(20) NOT NULL,
+	apellidos VARCHAR(20) NOT NULL,
+	telefono INT(10) NOT NULL UNIQUE,
+	fechaNacimiento DATE NOT NULL,
+	cargo VARCHAR(20)  NOT NULL
+
+);
+
+INSERT INTO empleados (nombre, apellidos, telefono, fechaNacimiento, cargo) VALUES 
+('ivan','navarro','65436254','2004-03-03','informatico'),
+('yago','calabuig','52485934','2005-04-23','programador'),
+('ronal','vasquez','52486514','2004-06-13','probador'),
+('jesus','lopez','50124785','1994-10-22','betatester');
